@@ -43,7 +43,6 @@ skills-in-shells/
 |   `-- style-guide.md
 |-- skills/
 |   |-- active-directory-gpo/
-|   |-- focused-fix/
 |   |-- ot-purdue-osi/
 |   |-- pki-adcs/
 |   |-- powershell-production/
@@ -138,3 +137,7 @@ Also check:
 - Keep `AGENTS.md` global and practical.
 - Keep skill files domain-specific.
 - Push branches and open a PR instead of pushing directly to `main`.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
