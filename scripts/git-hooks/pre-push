@@ -1,0 +1,18 @@
+#!/bin/sh
+# Prevent pushing directly to the main branch
+
+protected_branch="main"
+
+while read local_ref local_sha remote_ref remote_sha
+do
+    if [ "$remote_ref" = "refs/heads/$protected_branch" ]
+    then
+        echo "==========================================================="
+        echo "ERROR: Direct push to '$protected_branch' is prohibited!"
+        echo "Please create a feature/bugfix branch and submit a PR."
+        echo "==========================================================="
+        exit 1
+    fi
+done
+
+exit 0
