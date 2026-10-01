@@ -7,7 +7,7 @@ description: "Use this skill for OT, ICS, Purdue model, OSI model, network segme
 
 ## When to Use This Skill
 
-Use this skill for OT, ICS, OT, ICS, industrial, or mission critical, Purdue-model segmentation, firewall rules, jump hosts, industrial DMZ design, vendor access, small VLANs, control-zone troubleshooting, and OSI-layer analysis.
+Use this skill for OT, ICS, industrial or mission critical environments, Purdue-model segmentation, firewall rules, jump hosts, industrial DMZ design, vendor access, small VLANs, control-zone troubleshooting, and OSI-layer analysis.
 
 ## Do Not Use This Skill When
 
