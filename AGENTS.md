@@ -146,7 +146,7 @@ If multiple skills apply, use the smallest useful set. For example:
 - Production PowerShell: `powershell-production`
 - Security review or hardening: `security-engineering`
 - Terraform or IaC: `terraform-enterprise`
-- Runbooks and team documentation: `research-writer`
+- Runbooks and team documentation: the relevant domain skill plus `templates/operational-manual.md`
 
 ## Reporting Back
 

@@ -1,133 +1,101 @@
-# ==========================================================
-# macOS
-# ==========================================================
+# Operating system files
 .DS_Store
 .AppleDouble
 .LSOverride
-Icon?
 ._*
-.Spotlight-V100
-.Trashes
+.Spotlight-V100/
+.Trashes/
+Thumbs.db
+Desktop.ini
+*:Zone.Identifier
 
-# ==========================================================
-# VS Code
-# ==========================================================
-.vscode/*
-!.vscode/extensions.json
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-
-# ==========================================================
-# JetBrains IDEs
-# ==========================================================
+# Local editor settings and backup files
+.vscode/
 .idea/
 *.iml
+*.swp
+*.swo
+*~
+*.bak
 
-# ==========================================================
-# Logs
-# ==========================================================
-*.log
-logs/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Local agent settings and runtime data
+.claude/settings.local.json
+.claude/cache/
+.codex/cache/
+.zero-slop/
+.cache/
+.local/
+.local.env
+.local.settings.json
+tmp/
+temp/
 
-# ==========================================================
-# Environment / Secrets
-# ==========================================================
+# Credentials and private keys (keep sanitized environment examples)
 .env
 .env.*
+!.env.example
+!.env.*.example
 *.secret
 *.secrets
 *.key
 *.pem
 *.pfx
 *.p12
-*.cer
-*.crt
-*.csr
-
-# ==========================================================
-# SSH
-# ==========================================================
 id_rsa
 id_dsa
 id_ecdsa
 id_ed25519
 
-# ==========================================================
-# Terraform
-# ==========================================================
+# Logs and packet captures, which can contain sensitive traffic
+*.log
+logs/
+*.pcap
+*.pcapng
+*.cap
+/http-objects/
+/ftp-files/
+/smb-files/
+
+# Terraform runtime data and saved plans (commit .terraform.lock.hcl)
 .terraform/
-.terraform.lock.hcl
 *.tfstate
 *.tfstate.*
-crash.log
+*.tfplan
+tfplan
+tfplan.*
+crash.*.log
 override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.json.example
+.terraformrc
+terraform.rc
 
-# ==========================================================
-# Python
-# ==========================================================
+# Python environments, caches, and build output
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
 .venv/
 venv/
 env/
-dist/
-build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
 *.egg-info/
+build/
+dist/
 
-# ==========================================================
-# Node.js
-# ==========================================================
+# Node dependencies, caches, and coverage
 node_modules/
 .npm/
 .pnpm-store/
 .next/
 .nuxt/
-dist/
 coverage/
-
-# ==========================================================
-# PowerShell
-# ==========================================================
-*.psd1.bak
-*.psm1.bak
-
-# ==========================================================
-# Archives
-# ==========================================================
-*.zip
-*.tar
-*.gz
-*.7z
-*.rar
-
-# ==========================================================
-# Claude / Codex / AI Projects
-# ==========================================================
-.claude/cache/
-.codex/cache/
-.cache/
-tmp/
-temp/
-
-# ==========================================================
-# Local Configuration
-# ==========================================================
-.local/
-.local.env
-.local.settings.json
-
-# ==========================================================
-# OS Generated
-# ==========================================================
-Thumbs.db
-Desktop.ini
-*:Zone.Identifier
+.coverage
+.coverage.*
+htmlcov/
